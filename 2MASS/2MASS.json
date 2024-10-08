@@ -986,7 +986,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 0,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "1 min",
+      "schedulingPeriod" : "1 hour",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
