@@ -20,7 +20,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "Armazenada",
+        "comments" : "Armazenada o nome do arquivo na variável \"filename\".",
         "groupId" : "flow-contents-group",
         "id" : "64736766-04ae-31c7-9f7b-73bf4168ee77",
         "name" : "UpdateAttribute",
@@ -37,7 +37,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "Response" ],
       "source" : {
-        "comments" : "",
+        "comments" : "Faz a requisição para baixar o arquivo, conforme conteúdo da variável file.",
         "groupId" : "flow-contents-group",
         "id" : "b48340a0-2c3f-365a-9555-d3ca4dbf4f41",
         "name" : "InvokeHTTP",
@@ -53,7 +53,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "",
+        "comments" : "Faz a requisição para baixar o arquivo, conforme conteúdo da variável file.",
         "groupId" : "flow-contents-group",
         "id" : "b48340a0-2c3f-365a-9555-d3ca4dbf4f41",
         "name" : "InvokeHTTP",
@@ -70,7 +70,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "matched" ],
       "source" : {
-        "comments" : "",
+        "comments" : "Faz a extração (em REGEX) de arquivos com extensão .gz e armazena na variável \"file\".",
         "groupId" : "flow-contents-group",
         "id" : "82315c9b-618a-3deb-82b5-5013594387fa",
         "name" : "ExtractText",
@@ -86,7 +86,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "",
+        "comments" : "Dispara uma mensagem no SLACK com informações do processo.",
         "groupId" : "flow-contents-group",
         "id" : "ee62d94b-efd1-3e11-a4d1-aae7303c7d6e",
         "name" : "PublishSlack",
@@ -103,7 +103,7 @@
       "prioritizers" : [ "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer" ],
       "selectedRelationships" : [ "success" ],
       "source" : {
-        "comments" : "",
+        "comments" : "Faz o Input do arquivo no diretório especificado.",
         "groupId" : "flow-contents-group",
         "id" : "02c33c9c-9bc3-3d52-9fec-28c23091b36e",
         "name" : "PutFile",
@@ -119,7 +119,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "",
+        "comments" : "Faz o Input do arquivo no diretório especificado.",
         "groupId" : "flow-contents-group",
         "id" : "02c33c9c-9bc3-3d52-9fec-28c23091b36e",
         "name" : "PutFile",
@@ -136,7 +136,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "success" ],
       "source" : {
-        "comments" : "Armazenada",
+        "comments" : "Armazenada o nome do arquivo na variável \"filename\".",
         "groupId" : "flow-contents-group",
         "id" : "64736766-04ae-31c7-9f7b-73bf4168ee77",
         "name" : "UpdateAttribute",
@@ -152,7 +152,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "",
+        "comments" : "Divide o html linha a linha..",
         "groupId" : "flow-contents-group",
         "id" : "e81383c4-195c-3bea-bb51-47cc4c5ecbda",
         "name" : "SplitText",
@@ -169,7 +169,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "Response" ],
       "source" : {
-        "comments" : ".",
+        "comments" : "Acessa a URL do 2MASS e coleta o html da página.",
         "groupId" : "flow-contents-group",
         "id" : "873a9be5-fbf3-3d22-9553-aded611b069c",
         "name" : "InvokeHTTP",
@@ -185,7 +185,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : ".",
+        "comments" : "Acessa a URL do 2MASS e coleta o html da página.",
         "groupId" : "flow-contents-group",
         "id" : "873a9be5-fbf3-3d22-9553-aded611b069c",
         "name" : "InvokeHTTP",
@@ -202,7 +202,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "success" ],
       "source" : {
-        "comments" : "",
+        "comments" : "Inicia o processo",
         "groupId" : "flow-contents-group",
         "id" : "e167a478-7c61-3108-bfcb-3b147d4638a1",
         "name" : "GenerateFlowFile",
@@ -218,7 +218,7 @@
       } ],
       "componentType" : "CONNECTION",
       "destination" : {
-        "comments" : "",
+        "comments" : "Faz a extração (em REGEX) de arquivos com extensão .gz e armazena na variável \"file\".",
         "groupId" : "flow-contents-group",
         "id" : "82315c9b-618a-3deb-82b5-5013594387fa",
         "name" : "ExtractText",
@@ -235,7 +235,7 @@
       "prioritizers" : [ ],
       "selectedRelationships" : [ "splits" ],
       "source" : {
-        "comments" : "",
+        "comments" : "Divide o html linha a linha..",
         "groupId" : "flow-contents-group",
         "id" : "e81383c4-195c-3bea-bb51-47cc4c5ecbda",
         "name" : "SplitText",
@@ -272,7 +272,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Dispara uma mensagem no SLACK com informações do processo.",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -369,7 +369,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Faz a extração (em REGEX) de arquivos com extensão .gz e armazena na variável \"file\".",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -532,7 +532,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Divide o html linha a linha..",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -605,7 +605,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Faz a requisição para baixar o arquivo, conforme conteúdo da variável file.",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 2,
       "executionNode" : "ALL",
@@ -903,7 +903,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Inicia o processo",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -1000,7 +1000,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "",
+      "comments" : "Faz o Input do arquivo no diretório especificado.",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -1094,7 +1094,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : ".",
+      "comments" : "Acessa a URL do 2MASS e coleta o html da página.",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
@@ -1392,7 +1392,7 @@
         "group" : "org.apache.nifi",
         "version" : "2.0.0-M4"
       },
-      "comments" : "Armazenada",
+      "comments" : "Armazenada o nome do arquivo na variável \"filename\".",
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
