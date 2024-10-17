@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1729128673734,
+    "description" : "Flow para transferência de dados do PhotoZ",
+    "identifier" : "photoz",
+    "lastModifiedTimestamp" : 1729128673734,
+    "name" : "photoz",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
